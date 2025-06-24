@@ -127,3 +127,40 @@ button[file-upload-multiple] {
 .popup-ajuda button:hover {
     background: #c9302c;  
 }
+
+/*
+* Switche
+*/
+/* Apenas checkboxes dentro do tiposBeneficios */
+div[key="art299"] input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+div[key="art299"] input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+div[key="art299"] input[type="checkbox"]:checked {
+    background-color: #4caf50;
+}
+
+div[key="art299"] input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
