@@ -158,7 +158,7 @@ div[key="art299"] input[type="checkbox"]::before {
 }
 
 div[key="art299"] input[type="checkbox"]:checked {
-    background-color: #4caf50;
+    background-color: #007bff;
 }
 
 div[key="art299"] input[type="checkbox"]:checked::before {
