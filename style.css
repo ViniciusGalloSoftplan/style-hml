@@ -1,0 +1,129 @@
+/*Centralização do titulo*/
+div[key="titulo"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* ajuste a altura conforme desejar */
+}
+
+div[key="titulo"] h1.ng-binding {
+    text-align: center;
+    width: 100%;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/* Estilização dos alertas */
+[fd-element="alert"] .alert {
+    background: linear-gradient(90deg, #0861a4, #0b90d2, #0ebeff);
+    color: #003366;
+    border: none;
+}
+
+/* Estilização dos botões de upload */
+button[file-upload-multiple] {
+    background: #00838F;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Botão de ajuda */
+.help-button {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background: #fff;
+    color: #007bff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.help-button:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Fundo do popup (backdrop) */
+.backdrop-ajuda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Estilo da janela do popup */
+.popup-ajuda {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    color: #444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Título do popup */
+.popup-ajuda h3 {
+    margin-top: 0;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo do popup */
+.popup-ajuda p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Imagem do popup */
+.popup-ajuda img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Botão de fechar */
+.popup-ajuda button {
+    padding: 8px 16px;
+    border: none;
+    background: #d9534f;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.popup-ajuda button:hover {
+    background: #c9302c;  
+}
