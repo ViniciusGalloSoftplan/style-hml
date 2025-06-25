@@ -1,24 +1,21 @@
-/* 2. Estilo da logo posicionada à esquerda */
 [key="logopmp"] {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 180px; /* ajuste conforme necessário */
+  width: 100px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 3. Garante que a imagem se ajuste corretamente */
 [key="logopmp"] img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* 4. Título centralizado na tela (horizontal e vertical) */
 [key="titulo"].schema-form-h1 {
   position: absolute;
   top: 50%;
@@ -32,7 +29,6 @@
   width: max-content;
 }
 
-/* 5. Mantém a aparência original do h1 */
 [key="titulo"] h1.ng-binding {
   margin: 0;
   text-align: center;
