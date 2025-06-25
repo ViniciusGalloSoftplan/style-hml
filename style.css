@@ -1,41 +1,42 @@
-/* Container pai com posição relativa */
+/* Container com base para posicionamento absoluto */
 [key="section_1691671039150"] > .row {
   position: relative;
-  height: 120px; /* altura desejada */
+  height: 120px; /* ajuste conforme necessário */
 }
 
-/* Logo absolutamente posicionada no canto esquerdo */
+/* Logo posicionada no canto esquerdo */
 [key="logopmp"] {
   position: absolute;
-  left: 20px; /* distância da esquerda */
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  width: 140px; /* ajuste conforme imagem */
-  height: auto;
+  width: 140px; /* ajuste conforme a logo */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Título absolutamente centralizado na tela */
+/* Container do título, centralizado na tela */
 [key="titulo"].schema-form-h1 {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
-  text-align: center;
-  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Título ajustado */
+/* Estilo do título (sem alterações visuais) */
 [key="titulo"] h1.ng-binding {
   margin: 0;
-  white-space: nowrap;
+  text-align: center;
+  white-space: normal;
   word-break: break-word;
-  font-size: 2rem;
 }
+
 
 /* Estilização dos alertas */
 [fd-element="alert"] .alert {
