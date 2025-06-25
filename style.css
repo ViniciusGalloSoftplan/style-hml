@@ -1,40 +1,39 @@
-/* 1. Força os elementos na mesma linha */
+/* Container principal */
 [key="section_1691671039150"] > .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 16px;
-  padding: 0 20px;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* 2. Define largura fixa para o logo */
+/* Logo fora do fluxo e posicionada no canto */
 [key="logopmp"] {
-  flex: 0 0 auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px; /* ajuste conforme o tamanho da logo */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 !important;
-  padding: 0;
 }
 
-/* 3. Permite que o título use todo o restante do espaço */
+/* Título centralizado na tela */
 [key="titulo"].schema-form-h1 {
-  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  margin: 0 auto;
   height: 100%;
 }
 
-/* 4. Estilo do título */
+/* Estilo do texto do título */
 [key="titulo"] h1.ng-binding {
   margin: 0;
   text-align: center;
-  white-space: normal;
   word-break: break-word;
+  white-space: normal;
 }
 
 /* Estilização dos alertas */
