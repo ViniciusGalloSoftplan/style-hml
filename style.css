@@ -3,7 +3,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 100px;
+  width: 80px; /* Reduzi de 100px para 80px */
   height: auto;
   display: flex;
   align-items: center;
@@ -11,10 +11,13 @@
 }
 
 [key="logopmp"] img {
-  width: 60px;
+  width: 100%;        /* Preenche o container */
   height: auto;
+  max-height: 60px;   /* Define altura máxima para caber no quadrado */
+  object-fit: contain;
   display: block;
 }
+
 
 [key="titulo"].schema-form-h1 {
   position: absolute;
