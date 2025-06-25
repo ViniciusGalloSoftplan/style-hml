@@ -8,6 +8,7 @@
     height: auto;              /* Altura dinâmica */
     padding: 0;
     margin: 0;
+    box-sizing: border-box;    /* Inclui padding e border na largura */
 }
 
 /* Container da imagem (mantém o posicionamento padrão do BPM) */
@@ -15,6 +16,8 @@
     width: 100%;               /* Ocupa a largura da col-1 */
     padding: 0;
     margin: 0;
+    display: inline-flex;      /* Garante que a imagem siga o fluxo */
+    align-items: center;       /* Centraliza verticalmente dentro da col-1 */
 }
 
 /* Estilo da imagem (mantém o comportamento padrão, com ajuste de proporções) */
@@ -35,6 +38,7 @@
     height: auto;              /* Altura dinâmica */
     padding: 0;
     margin: 0;
+    box-sizing: border-box;    /* Inclui padding e border na largura */
 }
 
 /* Estilo do título <h1> */
@@ -44,7 +48,6 @@
     word-break: break-word;    /* Quebra palavras longas */
     white-space: normal;       /* Permite quebras de linha */
     margin: 0;                 /* Remove margens */
-    font-size: 1.5rem;         /* Tamanho relativo */
     line-height: normal;       /* Evita desalinhamentos verticais */
 }
 
