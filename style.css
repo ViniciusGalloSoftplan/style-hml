@@ -11,7 +11,8 @@
 }
 
 [key="logopmp"] img {
-  max-width: 100%;
+  max-width: none; /* para evitar limite de 100% */
+  width: 150px;    /* define largura fixa */
   height: auto;
   display: block;
 }
