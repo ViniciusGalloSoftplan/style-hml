@@ -3,7 +3,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 25px; /* Reduzi de 100px para 80px */
+  width: 100px;
   height: auto;
   display: flex;
   align-items: center;
@@ -11,9 +11,15 @@
 }
 
 [key="logopmp"] img {
-  width: 100%;        /* Preenche o container */
+  width: 60px;
   height: auto;
-  max-height: 10px;   /* Define altura máxima para caber no quadrado */
+  display: block;
+}
+
+img[src*="logo-vertical.png"] {
+  width: 200px;
+  height: auto;
+  max-height: 200px;
   object-fit: contain;
   display: block;
 }
