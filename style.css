@@ -3,11 +3,12 @@
 [key="titulo"].schema-form-h1 {
     display: flex;
     align-items: center;        /* Alinha verticalmente com a imagem */
-    justify-content: center;    /* Centraliza horizontalmente na col-12 */
-    height: 100%;               /* Mantém altura automática */
+    justify-content: center;    /* Centraliza o conteúdo na col-12 */
+    height: 100%;               /* Mantém altura igual à da imagem */
     padding: 0;
     margin: 0;
-    width: 100%;                /* Garante que ocupe toda a largura da col-12 */
+    width: 100%;                /* Garante que ocupe a largura total disponível */
+    position: relative;         /* Para ajustes finos, se necessário */
 }
 
 /* Estilo do título <h1> */
@@ -16,7 +17,23 @@
     padding: 0;
     text-align: center;         /* Centraliza o texto dentro do h1 */
     font-size: 24px;            /* Ajuste conforme desejado */
-    width: auto;                /* Remove largura fixa para melhor centralização */
+    width: auto;                /* Permite que o h1 se ajuste ao conteúdo */
+    line-height: normal;        /* Evita que o texto desalinhe verticalmente */
+}
+
+/* Ajuste para a imagem na col-2, se necessário */
+[key="logopmp"].schema-form-image {
+    display: flex;
+    align-items: center;        /* Garante que a imagem fique centralizada verticalmente */
+    height: 100%;               /* Mantém a altura consistente com o título */
+    padding: 0;
+    margin: 0;
+}
+
+[key="logopmp"].schema-form-image img {
+    max-height: 100%;           /* Garante que a imagem não ultrapasse a altura do contêiner */
+    max-width: 100%;            /* Mantém proporções da imagem */
+    object-fit: contain;        /* Evita distorção da imagem */
 }
 
 /* Estilização dos alertas */
