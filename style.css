@@ -1,5 +1,5 @@
 /*Centralização do titulo*/
-div[key="titulo"] {
+form-subelement [key="titulo"] {
     display: flex;
     justify-content: center;
     align-items: center;
