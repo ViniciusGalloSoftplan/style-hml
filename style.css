@@ -1,39 +1,41 @@
 /*Centralização do titulo*/
-/* Container do título */
 [key="titulo"].schema-form-h1 {
     display: flex;
-    align-items: center;        /* Alinha verticalmente com a imagem */
-    justify-content: center;    /* Centraliza o conteúdo na col-12 */
-    height: 100%;               /* Mantém altura igual à da imagem */
+    align-items: center;        /* Centraliza verticalmente o conteúdo */
+    justify-content: center;    /* Centraliza horizontalmente na col-12 */
+    height: 100%;               /* Garante que o contêiner tenha a mesma altura da imagem */
+    min-height: 100%;           /* Assegura altura mínima para consistência */
     padding: 0;
     margin: 0;
-    width: 100%;                /* Garante que ocupe a largura total disponível */
-    position: relative;         /* Para ajustes finos, se necessário */
+    width: 100%;                /* Ocupa toda a largura disponível */
 }
 
 /* Estilo do título <h1> */
 [key="titulo"].schema-form-h1 h1 {
     margin: 0;
     padding: 0;
-    text-align: center;         /* Centraliza o texto dentro do h1 */
+    text-align: center;         /* Centraliza o texto horizontalmente */
     font-size: 24px;            /* Ajuste conforme desejado */
-    width: auto;                /* Permite que o h1 se ajuste ao conteúdo */
-    line-height: normal;        /* Evita que o texto desalinhe verticalmente */
+    width: auto;                /* Ajusta ao conteúdo */
+    line-height: normal;        /* Evita desalinhamento vertical */
 }
 
-/* Ajuste para a imagem na col-2, se necessário */
+/* Container da imagem */
 [key="logopmp"].schema-form-image {
     display: flex;
-    align-items: center;        /* Garante que a imagem fique centralizada verticalmente */
-    height: 100%;               /* Mantém a altura consistente com o título */
+    align-items: center;        /* Centraliza a imagem verticalmente */
+    justify-content: center;    /* Centraliza a imagem horizontalmente, se desejado */
+    height: 100%;               /* Garante mesma altura do contêiner do título */
+    min-height: 100%;           /* Consistência na altura */
     padding: 0;
     margin: 0;
 }
 
+/* Estilo da imagem */
 [key="logopmp"].schema-form-image img {
-    max-height: 100%;           /* Garante que a imagem não ultrapasse a altura do contêiner */
-    max-width: 100%;            /* Mantém proporções da imagem */
-    object-fit: contain;        /* Evita distorção da imagem */
+    max-height: 100%;           /* Garante que a imagem não ultrapasse o contêiner */
+    max-width: 100%;            /* Mantém proporções */
+    object-fit: contain;        /* Evita distorção */
 }
 
 /* Estilização dos alertas */
