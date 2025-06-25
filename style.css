@@ -1,15 +1,21 @@
 /*Centralização do titulo*/
 [key="titulo"].schema-form-h1 {
     display: flex;
-    align-items: center;
-    height: 120px; /* ou ajuste conforme desejado */
+    align-items: center;        /* Alinha verticalmente com a imagem */
+    justify-content: flex-start;
+    height: 100%;               /* Mantém altura automática para acompanhar a logo */
+    padding: 0;
+    margin: 0;
 }
 
 [key="titulo"].schema-form-h1 h1 {
     margin: 0;
+    padding: 0;
     text-align: left;
-    padding-left: 0;
+    font-size: 24px;            /* Ajuste conforme desejado */
+    width: 100%;
 }
+
 
 /* Estilização dos alertas */
 [fd-element="alert"] .alert {
