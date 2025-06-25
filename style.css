@@ -10,6 +10,21 @@
     margin: 0;
 }
 
+/* Container da imagem (mantém o posicionamento padrão do BPM) */
+[key="logopmp"].schema-form-image {
+    width: 100%;               /* Ocupa a largura da col-1 */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo da imagem (mantém o comportamento padrão, com ajuste de proporções) */
+[key="logopmp"].schema-form-image img {
+    max-width: 100%;           /* Mantém proporções */
+    max-height: 100px;         /* Limita altura para consistência (ajuste conforme necessário) */
+    object-fit: contain;       /* Preserva proporções */
+    height: auto;              /* Altura responsiva */
+}
+
 /* Container do título */
 [key="titulo"].schema-form-h1 {
     display: flex;
