@@ -1,45 +1,55 @@
-/* Certifique-se de que o container pai tenha position: relative */
+/* 1. Garante que o #form-control seja o base de referência */
 #form-control {
   position: relative;
 }
 
-/* Bloco de linha com posição relativa */
+/* 2. Define o container como referência para posicionamento */
 [key="section_1691671039150"] > .row {
   position: relative;
-  height: 120px; /* ou o que preferir */
+  width: 100%;
+  height: 120px; /* ajuste conforme necessário */
 }
 
-/* Logo fixa no canto esquerdo da div #form-control */
+/* 3. Estilo da logo no canto esquerdo */
 [key="logopmp"] {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 140px;
+  width: 180px; /* AUMENTE aqui conforme necessário */
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Título centralizado em relação à div #form-control */
+/* 4. Garante que a imagem dentro da div se ajuste sem distorcer */
+[key="logopmp"] img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Título centralizado na tela (horizontal e vertical) */
 [key="titulo"].schema-form-h1 {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: max-content; /* evita ocupar largura desnecessária */
 }
 
-/* Manter estilo original do título */
+/* 6. Mantém a aparência original do h1 */
 [key="titulo"] h1.ng-binding {
   margin: 0;
   text-align: center;
-  word-break: break-word;
   white-space: normal;
+  word-break: break-word;
 }
 
 /* Estilização dos alertas */
