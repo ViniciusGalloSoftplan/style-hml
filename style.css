@@ -1,16 +1,14 @@
 /*Centralização do titulo*/
 [key="titulo"].schema-form-h1 {
     display: flex;
-    justify-content: flex-start; /* Alinha à esquerda dentro da coluna */
     align-items: center;
-    height: 120px; /* ou o valor que desejar */
+    height: 120px; /* ou ajuste conforme desejado */
 }
 
-[key="titulo"] h1.ng-binding {
-    margin-left: 0;
+[key="titulo"].schema-form-h1 h1 {
+    margin: 0;
     text-align: left;
-    width: 100%;
-    font-size: 28px; /* ajuste se quiser */
+    padding-left: 0;
 }
 
 /* Estilização dos alertas */
