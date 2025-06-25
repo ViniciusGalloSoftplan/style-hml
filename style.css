@@ -5,24 +5,9 @@
     align-items: center;       /* Centraliza verticalmente imagem e título */
     width: 100%;               /* Ocupa toda a largura disponível */
     min-height: 120px;         /* Altura mínima para consistência */
-    height: auto;              /* Altura dinâmica para responsividade */
+    height: auto;              /* Altura dinâmica */
     padding: 0;
     margin: 0;
-}
-
-/* Container da imagem (mantém o posicionamento padrão do BPM) */
-[key="logopmp"].schema-form-image {
-    width: 100%;               /* Ocupa a largura da col-1 */
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo da imagem (mantém o comportamento padrão, com ajuste de proporções) */
-[key="logopmp"].schema-form-image img {
-    max-width: 100%;           /* Mantém proporções */
-    max-height: 100px;         /* Limita altura para consistência (ajuste conforme necessário) */
-    object-fit: contain;       /* Preserva proporções */
-    height: auto;              /* Altura responsiva */
 }
 
 /* Container do título */
@@ -44,7 +29,7 @@
     word-break: break-word;    /* Quebra palavras longas */
     white-space: normal;       /* Permite quebras de linha */
     margin: 0;                 /* Remove margens */
-    font-size: 1.5rem;         /* Tamanho relativo para responsividade */
+    font-size: 1.5rem;         /* Tamanho relativo */
     line-height: normal;       /* Evita desalinhamentos verticais */
 }
 
