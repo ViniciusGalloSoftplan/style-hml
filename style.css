@@ -172,11 +172,12 @@ div[key="art299"] input[type="checkbox"] {
     border-radius: 20px;
     position: relative;
     outline: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, background 0.3s;
     vertical-align: middle;
     margin-right: 10px;
 }
 
+/* Botão deslizante */
 div[key="art299"] input[type="checkbox"]::before {
     content: "";
     position: absolute;
@@ -189,10 +190,13 @@ div[key="art299"] input[type="checkbox"]::before {
     transition: transform 0.3s;
 }
 
+/* Aplicando o degradê quando marcado */
 div[key="art299"] input[type="checkbox"]:checked {
-    background-color: #007bff;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
 }
 
+/* Animação do botão deslizante */
 div[key="art299"] input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
+
