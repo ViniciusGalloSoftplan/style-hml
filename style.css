@@ -1,13 +1,36 @@
-/*Centralização do titulo*/
-/* Container geral do título */
+/* 1. Força os elementos (logo e título) na mesma linha */
+[key="section_1691671039150"] .row {
+  display: flex;
+  align-items: center;
+}
+
+/* 2. Ajusta a imagem/logo para alinhar verticalmente */
+[key="logopmp"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+
+/* 3. Alinha o título verticalmente com a logo */
 [key="titulo"].schema-form-h1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;     /* Centraliza o bloco inteiro */
-    align-items: center;
-    height: 120px;
-    padding: 0;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* garante alinhamento vertical */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* 4. Ajusta o texto do título */
+[key="titulo"] h1.ng-binding {
+  margin: 0;
+  text-align: center;
+  word-break: break-word;
+  white-space: normal;
+  width: 100%;
 }
 
 /* Título em si */
