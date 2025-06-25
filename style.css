@@ -1,22 +1,181 @@
 /*Centralização do titulo*/
-.schema-form-h1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+[key="titulo"].schema-form-h1 {
+  display: flex;
+  justify-content: center;     /* Centraliza horizontalmente */
+  align-items: center;         /* Alinha verticalmente */
+  height: 120px;
+  gap: 16px;                   /* Espaço entre imagem e título */
 }
 
-.schema-form-h1 h1 {
-    display: flex;
+/* Alvo do texto do título */
+[key="titulo"] h1.ng-binding {
+  margin: 0;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Adiciona imagem via pseudo-elemento antes do título */
+[key="titulo"].schema-form-h1::before {
+  content: "";
+  display: inline-block;
+  background-image: url('https://piracicaba.sp.gov.br/wp-content/uploads/2025/01/PMP_logo_colorido_vertical_SLOGAN.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;  /* ajuste conforme a imagem */
+  height: 60px; /* ajuste conforme necessário */
+}
+
+/* Estilização dos alertas */
+[fd-element="alert"] .alert {
+    background: linear-gradient(90deg, #0861a4, #0b90d2, #0ebeff);
+    color: #003366;
+    border: none;
+}
+
+/* Estilização dos botões de upload */
+button[file-upload-multiple] {
+    background: #00838F;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Botão de ajuda */
+.help-button {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background: #fff;
+    color: #007bff;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.schema-form-h1 h1::before {
-    content: url('https://piracicaba.sp.gov.br/wp-content/uploads/2025/01/PMP_logo_colorido_vertical_SLOGAN.png');
-    float: left;
+.help-button:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Fundo do popup (backdrop) */
+.backdrop-ajuda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Estilo da janela do popup */
+.popup-ajuda {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    color: #444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Título do popup */
+.popup-ajuda h3 {
+    margin-top: 0;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo do popup */
+.popup-ajuda p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Imagem do popup */
+.popup-ajuda img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Botão de fechar */
+.popup-ajuda button {
+    padding: 8px 16px;
+    border: none;
+    background: #d9534f;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.popup-ajuda button:hover {
+    background: #c9302c;  
+}
+
+/*
+* Switche
+*/
+/* Apenas checkboxes dentro do tiposBeneficios */
+div[key="art299"] input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s;
+    vertical-align: middle;
     margin-right: 10px;
-    width: 50px;
-    height: 50px;
+}
+
+div[key="art299"] input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+div[key="art299"] input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+div[key="art299"] input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
 }
 
 /* Estilização dos alertas */
