@@ -1,72 +1,23 @@
 /* Container do título e da imagem (contêiner pai, se aplicável) */
-.form-subelement {
-    display: flex;
-    flex-wrap: wrap;           /* Permite que os elementos se ajustem em telas menores */
-    align-items: center;       /* Centraliza verticalmente imagem e título */
-    justify-content: center;   /* Centraliza horizontalmente na coluna */
-    width: 100%;               /* Ocupa toda a largura da coluna */
-    min-height: 120px;         /* Altura mínima para consistência */
-    height: auto;              /* Altura dinâmica para responsividade */
-    padding: 0;
-    margin: 0;
-}
-
-/* Container do título */
 [key="titulo"].schema-form-h1 {
+    width: 100%;
     display: flex;
-    align-items: center;       /* Centraliza verticalmente o título */
-    justify-content: center;   /* Centraliza horizontalmente o título */
-    width: 100%;               /* Ocupa a largura total da coluna */
-    min-height: 120px;         /* Consistência com a imagem */
-    height: auto;              /* Altura dinâmica */
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    height: 120px; /* opcional */
 }
 
-/* Estilo do título <h1> */
 [key="titulo"] h1.ng-binding {
-    text-align: center;        /* Centraliza o texto horizontalmente */
-    width: 100%;               /* Ocupa a largura do contêiner */
-    word-break: break-word;    /* Quebra palavras longas */
-    white-space: normal;       /* Permite quebras de linha */
-    margin: 0;                 /* Remove margens */
-    font-size: 1.5rem;         /* Tamanho relativo para responsividade */
-    line-height: normal;       /* Evita desalinhamentos verticais */
-}
-
-/* Container da imagem */
-[key="logopmp"].schema-form-image {
-    display: flex;
-    align-items: center;       /* Centraliza a imagem verticalmente */
-    justify-content: center;   /* Centraliza a imagem horizontalmente */
-    width: 100%;               /* Ocupa a largura da coluna (ou parte, se ajustado) */
-    min-height: 120px;         /* Consistência com o título */
-    height: auto;              /* Altura dinâmica */
-    padding: 0;
+    text-align: center;
+    width: 100%;
+    word-break: break-word;
+    white-space: normal;
     margin: 0;
+    line-height: 120px; /* centralização vertical */
 }
 
-/* Estilo da imagem */
-[key="logopmp"].schema-form-image img {
-    max-width: 100%;           /* Mantém proporções */
-    max-height: 100px;         /* Limita altura para evitar distorções */
-    object-fit: contain;       /* Preserva proporções */
-    height: auto;              /* Altura responsiva */
-}
-
-/* Media Queries para responsividade */
-@media (max-width: 576px) {
-    [key="titulo"].schema-form-h1,
-    [key="logopmp"].schema-form-image {
-        min-height: 80px;      /* Reduz altura mínima em telas pequenas */
-    }
-    [key="titulo"] h1.ng-binding {
-        font-size: 1.2rem;     /* Reduz tamanho da fonte */
-    }
-    [key="logopmp"].schema-form-image img {
-        max-height: 80px;      /* Reduz altura da imagem em mobile */
-    }
-}
 
 /* Estilização dos alertas */
 [fd-element="alert"] .alert {
