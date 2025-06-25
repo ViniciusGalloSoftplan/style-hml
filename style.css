@@ -1,54 +1,22 @@
-/* Contêiner pai do formulário */
-.form-subelement {
+/*Centralização do titulo*/
+.schema-form-h1 {
     display: flex;
-    flex-wrap: nowrap;         /* Garante imagem e título na mesma linha */
-    align-items: center;       /* Centraliza verticalmente imagem e título */
-    width: 100%;               /* Ocupa toda a largura disponível */
-    min-height: 120px;         /* Altura mínima para consistência */
-    height: auto;              /* Altura dinâmica */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;    /* Inclui padding e border na largura */
+    justify-content: center;
+    width: 100%;
 }
 
-/* Container da imagem (mantém o posicionamento padrão do BPM) */
-[key="logopmp"].schema-form-image {
-    width: 100%;               /* Ocupa a largura da col-1 */
-    padding: 0;
-    margin: 0;
-    display: inline-flex;      /* Garante que a imagem siga o fluxo */
-    align-items: center;       /* Centraliza verticalmente dentro da col-1 */
-}
-
-/* Estilo da imagem (mantém o comportamento padrão, com ajuste de proporções) */
-[key="logopmp"].schema-form-image img {
-    max-width: 100%;           /* Mantém proporções */
-    max-height: 100px;         /* Limita altura para consistência (ajuste conforme necessário) */
-    object-fit: contain;       /* Preserva proporções */
-    height: auto;              /* Altura responsiva */
-}
-
-/* Container do título */
-[key="titulo"].schema-form-h1 {
+.schema-form-h1 h1 {
     display: flex;
-    align-items: center;       /* Centraliza verticalmente o título com a imagem */
-    justify-content: center;   /* Centraliza horizontalmente o título na página */
-    width: 100%;               /* Ocupa a largura da col-11 */
-    min-height: 120px;         /* Mesma altura mínima da imagem */
-    height: auto;              /* Altura dinâmica */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;    /* Inclui padding e border na largura */
+    align-items: center;
+    position: relative;
 }
 
-/* Estilo do título <h1> */
-[key="titulo"] h1.ng-binding {
-    text-align: center;        /* Centraliza o texto horizontalmente */
-    width: 100%;               /* Ocupa a largura do contêiner */
-    word-break: break-word;    /* Quebra palavras longas */
-    white-space: normal;       /* Permite quebras de linha */
-    margin: 0;                 /* Remove margens */
-    line-height: normal;       /* Evita desalinhamentos verticais */
+.schema-form-h1 h1::before {
+    content: url('https://piracicaba.sp.gov.br/wp-content/uploads/2025/01/PMP_logo_colorido_vertical_SLOGAN.png');
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Estilização dos alertas */
