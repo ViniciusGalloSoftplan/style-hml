@@ -1,10 +1,3 @@
-/* 1. Define o escopo base do formulário */
-#form-control .row {
-  position: relative;
-  width: 100%;
-  height: 120px; /* ajuste conforme necessário */
-}
-
 /* 2. Estilo da logo posicionada à esquerda */
 [key="logopmp"] {
   position: absolute;
