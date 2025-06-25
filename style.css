@@ -1,24 +1,58 @@
 /* Container do título e da imagem (contêiner pai, se aplicável) */
-[key="titulo"].schema-form-h1 {
-    width: 100%;
+/* Contêiner pai da linha */
+section.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center;       /* Centraliza verticalmente imagem e título */
+    justify-content: flex-start; /* Alinha à esquerda, mas permite centralização do título */
+    width: 100%;               /* Ocupa toda a largura disponível */
+    min-height: 120px;         /* Altura mínima para consistência */
+    height: auto;              /* Altura dinâmica para responsividade */
     padding: 0;
-    margin: 0 auto;
-    height: 120px; /* opcional */
-}
-
-[key="titulo"] h1.ng-binding {
-    text-align: center;
-    width: 100%;
-    word-break: break-word;
-    white-space: normal;
     margin: 0;
-    line-height: 120px; /* centralização vertical */
 }
 
+/* Container da imagem */
+[key="logopmp"].schema-form-image {
+    display: flex;
+    align-items: center;       /* Centraliza a imagem verticalmente */
+    justify-content: center;   /* Centraliza a imagem horizontalmente na col-1 */
+    width: 100%;               /* Ocupa a largura da col-1 */
+    min-height: 120px;         /* Mesma altura mínima do título */
+    height: auto;              /* Altura dinâmica */
+    padding: 0;
+    margin: 0;
+}
 
+/* Estilo da imagem */
+[key="logopmp"].schema-form-image img {
+    max-width: 100%;           /* Mantém proporções */
+    max-height: 100px;         /* Limita altura para consistência */
+    object-fit: contain;       /* Preserva proporções */
+    height: auto;              /* Altura responsiva */
+}
+
+/* Container do título */
+[key="titulo"].schema-form-h1 {
+    display: flex;
+    align-items: center;       /* Centraliza verticalmente o título */
+    justify-content: center;   /* Centraliza horizontalmente o título na página */
+    width: 100%;               /* Ocupa a largura da col-11 */
+    min-height: 120px;         /* Mesma altura mínima da imagem */
+    height: auto;              /* Altura dinâmica */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do título <h1> */
+[key="titulo"] h1.ng-binding {
+    text-align: center;        /* Centraliza o texto horizontalmente */
+    width: 100%;               /* Ocupa a largura do contêiner */
+    word-break: break-word;    /* Quebra palavras longas */
+    white-space: normal;       /* Permite quebras de linha */
+    margin: 0;                 /* Remove margens */
+    font-size: 1.5rem;         /* Tamanho relativo para responsividade */
+    line-height: normal;       /* Evita desalinhamentos verticais */
+}
 /* Estilização dos alertas */
 [fd-element="alert"] .alert {
     background: linear-gradient(90deg, #0861a4, #0b90d2, #0ebeff);
