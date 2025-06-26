@@ -1,48 +1,51 @@
+/*
+*Centralização do titulo
+*/
 [key="logopmp"] {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 [key="logopmp"] img {
-  width: 60px;
-  height: auto;
-  display: block;
+    width: 60px;
+    height: auto;
+    display: block;
 }
 
 img[src*="logo-vertical.png"] {
-  width: 200px;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
-  display: block;
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
 }
 
 
 [key="titulo"].schema-form-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 [key="titulo"] h1.ng-binding {
-  margin: 0;
-  text-align: center;
-  white-space: normal;
-  word-break: break-word;
+    margin: 0;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
 }
 
 /* Estilização dos alertas */
@@ -161,6 +164,26 @@ button[file-upload-multiple] {
 }
 
 /*
+*Loader
+*/
+#tela-bloqueada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#tela-bloqueada img {
+    width: 80px;
+}
+
+/*
 * Switche
 */
 /* Apenas checkboxes dentro do tiposBeneficios */
@@ -199,4 +222,3 @@ div[key="art299"] input[type="checkbox"]:checked {
 div[key="art299"] input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
-
