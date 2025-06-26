@@ -183,23 +183,23 @@ button[file-upload-multiple] {
     width: 80px;
 }
 
-/*
-* Esconder/Mostrar (Paragrafo
-*/
-/* Toggle do parágrafo de observação */
+/* === Toggle de Parágrafo (Observação) === */
+
+/* Conteúdo do parágrafo (inicialmente escondido) */
 .observacao-toggle-conteudo {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
 }
 
+/* Conteúdo visível */
 .observacao-toggle-conteudo.aberto {
-    max-height: 1000px; /* valor grande para expandir */
+    max-height: 1000px; /* ajuste conforme o conteúdo esperado */
     opacity: 1;
 }
 
-/* Botão/label do toggle principal */
+/* Label clicável do parágrafo */
 .observacao-toggle-label {
     cursor: pointer;
     padding: 10px 16px;
@@ -210,40 +210,45 @@ button[file-upload-multiple] {
     align-items: center;
     font-weight: bold;
     font-size: 15px;
+    transition: background-color 0.3s ease;
 }
 
-/* Ícone seta principal */
-.seta-toggle {
+.observacao-toggle-label:hover {
+    background-color: #e0ebf2;
+}
+
+/* Ícones de seta (principal e sub) */
+.seta-toggle,
+.seta-subtoggle {
     display: inline-block;
-    transition: transform 0.3s ease;
     margin-right: 8px;
     font-size: 16px;
+    transition: transform 0.3s ease;
 }
 
-/* Sublista interna */
+/* Sublista escondida */
 .observacao-sublista {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
 }
 
+/* Sublista visível */
 .observacao-sublista.aberto {
-    max-height: 800px;
+    max-height: 800px; /* ajuste conforme o conteúdo esperado */
     opacity: 1;
 }
 
-/* Subitem (li com sublista) */
+/* Subitem (li com toggle) */
 .observacao-subitem {
     cursor: pointer;
 }
 
-/* Seta da sublista */
-.seta-subtoggle {
-    margin-right: 6px;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform 0.3s ease;
+/* Seta rotacionada (quando aberta) */
+.rotacionado {
+    transform: rotate(90deg);
+    transform-origin: center;
 }
 
 /*
