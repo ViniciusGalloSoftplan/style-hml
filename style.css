@@ -184,6 +184,69 @@ button[file-upload-multiple] {
 }
 
 /*
+* Esconder/Mostrar (Paragrafo
+*/
+/* Toggle do parágrafo de observação */
+.observacao-toggle-conteudo {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.observacao-toggle-conteudo.aberto {
+    max-height: 1000px; /* valor grande para expandir */
+    opacity: 1;
+}
+
+/* Botão/label do toggle principal */
+.observacao-toggle-label {
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: #eef3f7;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Ícone seta principal */
+.seta-toggle {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Sublista interna */
+.observacao-sublista {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.observacao-sublista.aberto {
+    max-height: 800px;
+    opacity: 1;
+}
+
+/* Subitem (li com sublista) */
+.observacao-subitem {
+    cursor: pointer;
+}
+
+/* Seta da sublista */
+.seta-subtoggle {
+    margin-right: 6px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/*
 * Switche
 */
 /* Apenas checkboxes dentro do tiposBeneficios */
