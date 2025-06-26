@@ -290,3 +290,34 @@ div[key="art299"] input[type="checkbox"]:checked {
 div[key="art299"] input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
+
+/*
+* Ajuda
+*/
+.help-button {
+  margin-left: 8px;
+  width: 24px;  /* maior que os 18px originais */
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.help-button:hover {
+  background: #007bff;
+  transform: scale(1.1);
+}
+
+.help-button img.ajuda-icon {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
