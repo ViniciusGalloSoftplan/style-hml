@@ -2,50 +2,50 @@
 *Centralização do titulo
 */
 [key="logopmp"] {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute !important;;
+    left: 0 !important;;
+    top: 50% !important;;
+    transform: translateY(-50%) !important;;
+    width: 100px !important;;
+    height: auto !important;;
+    display: flex !important;;
+    align-items: center !important;;
+    justify-content: center !important;;
 }
 
 [key="logopmp"] img {
-    width: 60px;
-    height: auto;
-    display: block;
+    width: 60px !important;;
+    height: auto !important;;
+    display: block !important;;
 }
 
 img[src*="logo-vertical.png"] {
-    width: 200px;
-    height: auto;
-    max-height: 200px;
-    object-fit: contain;
-    display: block;
+    width: 200px !important;;
+    height: auto !important;;
+    max-height: 200px !important;;
+    object-fit: contain !important;;
+    display: block !important;;
 }
 
 
 [key="titulo"].schema-form-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
+    position: absolute !important;;
+    top: 50% !important;;
+    left: 50% !important;;
+    transform: translate(-50%, -50%) !important;;
+    margin: 0 !important;;
+    padding: 0 !important;;
+    display: flex !important;;
+    align-items: center !important;;
+    justify-content: center !important;;
+    width: max-content !important;;
 }
 
 [key="titulo"] h1.ng-binding {
-    margin: 0;
-    text-align: center;
-    white-space: normal;
-    word-break: break-word;
+    margin: 0 !important;;
+    text-align: center !important;;
+    white-space: normal !important;;
+    word-break: break-word !important;;
 }
 
 /* Estilização dos alertas */
