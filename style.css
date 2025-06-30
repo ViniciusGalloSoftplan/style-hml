@@ -17,31 +17,28 @@
 }
 
 [key="logopmp"] img {
-  width: 60px !important;
+  width: 100px !important;
   height: auto !important;
   display: block !important;
 }
 
 /* Título */
 [key="titulo"].schema-form-h1 {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  margin: 0 !important;
+  position: static !important;         /* remove absolute */
+  width: 100% !important;              /* ocupa toda a largura do container */
+  text-align: center !important;       /* centraliza o conteúdo de texto */
+  margin: 0 auto !important;           /* centraliza o bloco se tiver largura menor */
   padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: max-content !important;
-  text-align: center !important;
+  display: block !important;           /* garante bloco */
 }
 
 [key="titulo"] h1.ng-binding {
   margin: 0 !important;
+  text-align: center !important;
   white-space: normal !important;
   word-break: break-word !important;
 }
+
 
 /* Estilização dos alertas */
 [fd-element="alert"] .alert {
