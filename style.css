@@ -2,11 +2,9 @@
 *Centralização do titulo
 */
 [key="logopmp"] {
-    position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
+    width: 220px;
     height: auto;
     display: flex;
     align-items: center;
@@ -184,104 +182,72 @@ button[file-upload-multiple] {
 }
 
 /* === Toggle de Parágrafo (Observação) === */
+
 /* Conteúdo do parágrafo (inicialmente escondido) */
 .observacao-toggle-conteudo {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
 }
 
 /* Conteúdo visível */
 .observacao-toggle-conteudo.aberto {
-  max-height: 1000px;
-  opacity: 1;
+    max-height: 1000px; /* ajuste conforme o conteúdo esperado */
+    opacity: 1;
 }
 
-/* Label principal E títulos de subtoggles: aplicam mesma formatação */
-.observacao-toggle-label{
-  cursor: pointer;
-  padding: 10px 16px;
-  background-color: #eef3f7;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: flex-start; /* alinhar conteúdo no topo */
-  gap: 8px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #000;
-  user-select: none;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
+/* Label clicável do parágrafo */
+.observacao-toggle-label {
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: #eef3f7;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
 }
 
-.observacao-subitem {
-  cursor: pointer;
-  padding: 10px 16px;
-  border: 2px solid #cbdbe7;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-  font-weight: bold;
-  color: #000;
-  user-select: none;
-  margin-top: 5px;
-  transition: background-color 0.3s ease;
+.observacao-toggle-label:hover {
+    background-color: #e0ebf2;
 }
 
-.observacao-toggle-label:hover,
-.observacao-subitem:hover {
-  background-color: #e0ebf2;
-}
-
-/* Ícones de seta (para ambos) */
+/* Ícones de seta (principal e sub) */
 .seta-toggle,
 .seta-subtoggle {
-  flex-shrink: 0;
-  font-size: 16px;
-  transition: transform 0.3s ease;
-  color: #000;
-  user-select: none;
-}
-
-/* Rotação da seta ao abrir */
-.rotacionado {
-  transform: rotate(90deg);
-  transform-origin: center;
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
 }
 
 /* Sublista escondida */
 .observacao-sublista {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
-  padding-left: 20px;
-  margin-top: 4px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease-in-out, opacity 0.8s ease-in-out;
 }
 
 /* Sublista visível */
 .observacao-sublista.aberto {
-  max-height: 800px;
-  opacity: 1;
+    max-height: 800px; /* ajuste conforme o conteúdo esperado */
+    opacity: 1;
 }
 
-/* Somente os itens DENTRO da sublista (li e ul) devem ficar sem fundo */
-.observacao-sublista > li,
-.observacao-sublista > ul {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 0 6px 20px !important;
-  list-style-type: disc;
-  color: inherit;
-  font-weight: normal;
+/* Subitem (li com toggle) */
+.observacao-subitem {
+    cursor: pointer;
 }
 
+/* Seta rotacionada (quando aberta) */
+.rotacionado {
+    transform: rotate(90deg);
+    transform-origin: center;
+}
 
 /*
 * Switche
