@@ -24,12 +24,12 @@
 
 /* Título */
 [key="titulo"].schema-form-h1 {
-  position: static !important;         /* remove absolute */
-  width: 100% !important;              /* ocupa toda a largura do container */
-  text-align: center !important;       /* centraliza o conteúdo de texto */
-  margin: 0 auto !important;           /* centraliza o bloco se tiver largura menor */
-  padding: 0 !important;
-  display: block !important;           /* garante bloco */
+  width: 100% !important;          /* faz o título ocupar toda a linha */
+  float: none !important;          /* remove o float do Bootstrap */
+  clear: both !important;          /* força iniciar abaixo do logo */
+  text-align: center !important;   /* centraliza o texto do título */
+  position: static !important;     /* remove qualquer absolute que tenha */
+  display: block !important;
 }
 
 [key="titulo"] h1.ng-binding {
