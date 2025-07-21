@@ -65,19 +65,23 @@ button[file-upload-multiple] {
 /* Botão de ajuda */
 .help-button {
     margin-left: 8px;
-    padding: 2px 10px;
+    width: 18px;
+    height: 18px;
     font-size: 12px;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 18px;
+    padding: 0;
     text-align: center;
-    border: none;
-    border-radius: 999px;
-    background-color: #e6f0ff; /* fundo azul claro */
-    color: #0056b3;            /* azul escuro no texto */
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background: #fff;
+    color: #007bff;
     cursor: pointer;
-    display: inline-block;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .help-button:hover {
@@ -85,7 +89,7 @@ button[file-upload-multiple] {
     color: #fff;
 }
 
-/* Backdrop (fundo do popup) */
+/* Fundo do popup (backdrop) */
 .backdrop-ajuda {
     position: fixed;
     top: 0;
@@ -101,7 +105,7 @@ button[file-upload-multiple] {
     opacity: 0;
 }
 
-/* Popup */
+/* Estilo da janela do popup */
 .popup-ajuda {
     background: #fff;
     border-radius: 12px;
@@ -117,6 +121,7 @@ button[file-upload-multiple] {
     opacity: 0;
 }
 
+/* Título do popup */
 .popup-ajuda h3 {
     margin-top: 0;
     color: #0056b3;
@@ -125,11 +130,13 @@ button[file-upload-multiple] {
     margin-bottom: 10px;
 }
 
+/* Parágrafo do popup */
 .popup-ajuda p {
     font-size: 1em;
     margin-bottom: 15px;
 }
 
+/* Imagem do popup */
 .popup-ajuda img {
     max-width: 100%;
     border-radius: 8px;
@@ -137,6 +144,7 @@ button[file-upload-multiple] {
     border: 1px solid #ddd;
 }
 
+/* Botão de fechar */
 .popup-ajuda button {
     padding: 8px 16px;
     border: none;
@@ -151,7 +159,7 @@ button[file-upload-multiple] {
 }
 
 .popup-ajuda button:hover {
-    background: #c9302c;
+    background: #c9302c;  
 }
 
 /*
