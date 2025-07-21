@@ -46,18 +46,3 @@ img[src*="logo-vertical.png"] {
     white-space: normal;
     word-break: break-word;
 }
-
-/* Estilização dos alertas */
-[fd-element="alert"] .alert {
-    background: linear-gradient(90deg, #0861a4, #0b90d2, #0ebeff);
-    color: #003366;
-    border: none;
-}
-
-/* Estilização dos botões de upload */
-button[file-upload-multiple] {
-    background: #00838F;
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
